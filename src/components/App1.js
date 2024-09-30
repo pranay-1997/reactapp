@@ -1,8 +1,11 @@
 import React from 'react'
 
-const App1 = () => {
+const App1 = (props) => {
+  console.log(props);
   return (
-    <div>App1</div>
+    <div>
+      <h1>Hello {props.name} a.k.a {props.heroName}</h1>
+    </div>
   )
 }
 
